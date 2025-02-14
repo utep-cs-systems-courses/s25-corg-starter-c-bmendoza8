@@ -26,3 +26,27 @@ void print_triangle(int leftCol, int size)
   }
 }
 
+// Arrows
+void print_arrow(int size){
+  for(int i = 0; i < size; i++){
+    for(int j =0; j < size - i; j++)//center arrow
+      putchar(' ');
+
+    for(int j = 0; j < 2 * i+1; j++)//2*i+1 make it 1,3,5
+      putchar('*');
+
+    putchar('\n');
+  }
+  //arrow lime
+  for(int i = 0; i < size; i++){
+    for(int j = 0; j < size; j++){//center line
+      putchar(' ');
+    }
+    putchar('*');//after ' ' then move to nextln
+    putchar('\n');
+  }
+}
+
+       
+   
+
